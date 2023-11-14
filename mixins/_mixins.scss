@@ -1,0 +1,61 @@
+@mixin breakpoints($point) {
+  @if $point == mobile {
+    @media (min-width: 375px) {
+      @content;
+    }
+  } @else if $point == small {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $point == medium {
+    @media (min-width: 768px) and (max-width: 991px) {
+      @content;
+    }
+  } @else if $point == large {
+    @media (min-width: 992px) and (max-width: 1199px) {
+      @content;
+    }
+  } @else if $point == x-large {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin items-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin items-center-column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@mixin items-center-column-reverse {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}
