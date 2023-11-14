@@ -59,7 +59,18 @@ body {
   color: hsl(229, 8%, 60%);
   margin-bottom: 80px;
 }
-
+@media (max-width: 767px) {
+  .header > p {
+    width: 80%;
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .header > p {
+    width: 80%;
+    font-size: 16px;
+  }
+}
 /* Start Navigation */
 .container .navigation {
   display: -webkit-box;
@@ -537,6 +548,7 @@ body {
 .container .features .content .features-tap-3 .text {
   width: 500px;
 }
+
 .container .features .content .features-tap-1 .text > h3, .container .features .content .features-tap-2 .text > h3,
 .container .features .content .features-tap-3 .text > h3 {
   font-size: 40px;
@@ -569,28 +581,30 @@ body {
 @media (max-width: 767px) {
   .container .features .content .features-tap-1 .text, .container .features .content .features-tap-2 .text,
   .container .features .content .features-tap-3 .text {
+    width: 80%;
     margin-top: 70px;
   }
   .container .features .content .features-tap-1 .text > h3, .container .features .content .features-tap-2 .text > h3,
   .container .features .content .features-tap-3 .text > h3 {
     font-size: 30px;
   }
-  .container .features .content .features-tap-1 .text > b, .container .features .content .features-tap-2 .text > b,
-  .container .features .content .features-tap-3 .text > b {
+  .container .features .content .features-tap-1 .text > p, .container .features .content .features-tap-2 .text > p,
+  .container .features .content .features-tap-3 .text > p {
     font-size: 16px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .container .features .content .features-tap-1 .text, .container .features .content .features-tap-2 .text,
   .container .features .content .features-tap-3 .text {
+    width: 80%;
     margin-top: 70px;
   }
   .container .features .content .features-tap-1 .text > h3, .container .features .content .features-tap-2 .text > h3,
   .container .features .content .features-tap-3 .text > h3 {
     font-size: 30px;
   }
-  .container .features .content .features-tap-1 .text > b, .container .features .content .features-tap-2 .text > b,
-  .container .features .content .features-tap-3 .text > b {
+  .container .features .content .features-tap-1 .text > p, .container .features .content .features-tap-2 .text > p,
+  .container .features .content .features-tap-3 .text > p {
     font-size: 16px;
   }
 }
